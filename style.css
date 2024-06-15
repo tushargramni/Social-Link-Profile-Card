@@ -1,0 +1,93 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    
+    /* display: grid; */
+    /* place-content: center; */
+    /* place-items: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: black;
+    background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+}
+.component{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    border-radius: 4pt;
+    margin: 4rem auto;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    /* background: repeating-linear-gradient(45deg,rgba(255,255,255,0.45) 10% ,rgba(255,255,255,0.8) 20% ); */
+    /* background-image: linear-gradient(135deg, transparent 0%, transparent 17%,rgba(87, 146, 234,0.6) 17%, rgba(87, 146, 234,0.6) 59%,transparent 59%, transparent 64%,rgba(34, 81, 222,0.6) 64%, rgba(34, 81, 222,0.6) 100%),linear-gradient(45deg, transparent 0%, transparent 2%,rgb(87, 146, 234) 2%, rgb(87, 146, 234) 46%,rgb(114, 178, 239) 46%, rgb(114, 178, 239) 54%,transparent 54%, transparent 63%,rgb(7, 48, 216) 63%, rgb(7, 48, 216) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255)); */
+    background-image: radial-gradient(circle at 67% 83%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 1%,transparent 1%, transparent 5%,transparent 5%, transparent 100%),radial-gradient(circle at 24% 80%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 27%,transparent 27%, transparent 63%,transparent 63%, transparent 100%),radial-gradient(circle at 23% 5%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 26%,transparent 26%, transparent 82%,transparent 82%, transparent 100%),radial-gradient(circle at 21% 11%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 35%,transparent 35%, transparent 45%,transparent 45%, transparent 100%),radial-gradient(circle at 10% 11%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 21%,transparent 21%, transparent 81%,transparent 81%, transparent 100%),radial-gradient(circle at 19% 61%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 20%,transparent 20%, transparent 61%,transparent 61%, transparent 100%),radial-gradient(circle at 13% 77%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 63%,transparent 63%, transparent 72%,transparent 72%, transparent 100%),radial-gradient(circle at 30% 93%, hsla(317,0%,96%,0.05) 0%, hsla(317,0%,96%,0.05) 33%,transparent 33%, transparent 82%,transparent 82%, transparent 100%),linear-gradient(90deg, rgb(22, 176, 207),rgb(103, 7, 215));
+}
+.img-sec{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+img{
+    width: 100%;
+    height: 125%;
+    margin: auto;
+    
+}
+.img-sec:hover{
+    z-index: 1;
+    user-select: none;
+    -webkit-user-drag: none;
+    cursor: pointer;
+    transform: scale(1.25);
+}
+.name-location{
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    width: max-content;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    background: hsla(255,100%,100%,0.45);
+}
+.items{
+    display:flex;
+    padding: 1rem;
+    gap: 1.5rem;
+    text-align: center;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.link-list{
+    display: flex;
+    gap: 1rem;
+    
+    flex-grow: 1;
+    border-radius: 1rem;
+    padding: 1rem;
+    flex-direction: column;
+    background: hsla(255,100%,100%,0.45);
+}
+.link-list .links{
+    flex-flow: 1;
+    padding: 1rem 3rem ;
+    text-align: center;
+    border-radius: 5pt;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,0.75);
+}
